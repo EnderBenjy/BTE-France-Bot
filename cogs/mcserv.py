@@ -12,7 +12,7 @@ class MCServ(commands.Cog):
         self.mc_embed = discord.Embed(title="**Statut des serveurs Minecraft BTE - France**", description="_ _\n")
         self.mc_embed.set_thumbnail(url="https://cdn.discordapp.com/icons/694003889506091100/a_c40ba19cfcfbb9db5f5060e85f6539cf.png?size=128")
 
-    @commands.command(brief='Statut du serveur Minecraft', aliases=['mcserv', 'mcstatus', 'status'])
+    @commands.command(brief='Statut du serveur Minecraft', aliases=['mcserv', 'mcstatus', 'status', 'ip'])
     async def mc(self, ctx):
         self.mc_embed.clear_fields()
         for server in self.servers:
